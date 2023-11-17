@@ -1,0 +1,6 @@
+import requests
+
+url = 'http://127.0.0.1:5000/api'
+
+r = requests.post(url, json={'total_labor':0.70,'many_similar_competitors':-0.74,'credit_score':-0.26,'other_credit_history1':-0.26,'other_credit_history2':4.00,'other_credit_history3':2.00,'last_credit_history':3.00,'worst_perfomance_history':1.00,'age_range_labor':0.00,'age_range':0.00,'degree_of_dependency_on_the_customer':1.00,'relationship_with_business_partners':3.00,'company_reputation':0.00,'product_quality':2.00,'easy_access_to_scarce_raw_materials':2.00,'easy_agent_permit_management':4.00,'brand_recognition':3.00,'easy_become_distributor':0.00,'business_prospect':2.00,'business_age':3.00,'compliance_with_business_lincece_tidak sesuai':1.00,'status_business_lincece_tidak aktif':1.00,'customer_location_luar negeri':1.00, 'competitor_advantage_harga lebih murah':0.00, 'competitor_advantage_jangkauan pasar yang luas':0.00, 'competitor_advantage_kualitas produk lebih baik':1.00,  'competitor_behavior_inovatif':0.00, 'competitor_behavior_konservatif':0.00, 'competitor_behavior_reaktif':0.00})
+print(r.json())
